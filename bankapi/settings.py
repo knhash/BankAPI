@@ -75,17 +75,7 @@ WSGI_APPLICATION = 'bankapi.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-# DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#             'NAME': "rose",
-#             'USER': "postgres",
-#             'PASSWORD': "shallpass",
-#             'HOST': "localhost",
-#             'PORT': "5432",
-#         }
-#     }
-# Parse database configuration from $DATABASE_URL
+
 import dj_database_url
 DATABASES = { 'default': dj_database_url.config() }
 
